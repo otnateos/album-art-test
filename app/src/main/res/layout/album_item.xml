@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <ImageView
+      android:id="@+id/cover"
+      android:layout_width="match_parent"
+      android:layout_height="245dp"
+      android:scaleType="centerCrop"/>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="68dp"
+      android:gravity="center_vertical"
+      android:layout_alignParentBottom="true">
+
+    <View
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.54"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_star_border_black_24dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/star"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_toLeftOf="@id/star"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:singleLine="true"
+        android:textSize="12sp"/>
+  </RelativeLayout>
+
+</RelativeLayout>
